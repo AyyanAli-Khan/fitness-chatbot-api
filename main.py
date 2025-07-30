@@ -15,7 +15,7 @@ def home():
 async def chat(request: ChatRequest):
     user_input = request.input
     
-    resp = Runner.run_sync(fitness_agent, input=user_input)
+    resp = await Runner.run(fitness_agent, input=user_input)
     
 
     agent_output = resp.final_output
