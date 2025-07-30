@@ -31,6 +31,9 @@ class ChatRequestBody(BaseModel):
     message: str
     userData: UserData
     todaysWorkout: TodaysWorkout
+    
+class ChatInput(BaseModel):
+    input: str
 
     
     
